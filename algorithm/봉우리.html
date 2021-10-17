@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){  
+                let answer=0; //카운트 할거니까 0
+                let n=arr.length; //arr배열의 길이를 n에 할당
+                let dx=[-1,0,1,0]; //x축 상하좌우
+                let dy=[0,1,0,-1];  //y축 상하좌우
+                for(let i=0; i<n; i++){ //arr배열의 x축
+                    for(let j=0; j<n; j++){ //arr배열의 y축
+                        let flag=1; //flag를 참으로 초기화
+                        for(let k=0; k<4; k++){ //네 방향
+                            let nx=i+dx[k]; //행
+                            let ny=j+dy[k]; //열
+                            if(nx>=0 && nx<n && ny>=0 && ny<n && arr[nx][ny]>=arr[i][j]){ //arr[nx][ny] : 가려고 하는 방향 arr[i][j] : 봉우리(타겟), 가려고 하는 방향이 봉우리보다 크거나 같으면 flag 초기화 또는 브레이크
+                                flag=0;//0이면 거짓
+                                break; //거짓이니 탐색하지 마라
+                            } // (nx>=0 && nx<n && ny>=0 && ny<n) 이 부분은 맨 바깥쪽 배열은 없는 숫자이기 때문에 0보다는 크되 봉우리 보다는 작다는 조건을 걸어줌
+                            
+                        }
+                        if(flag) answer++; //flag가 참이면 answer++
+                    }
+                }
+
+                return answer;
+            }
+
+            let arr=[[5, 3, 7, 2, 3], 
+                     [3, 7, 1, 6, 1],
+                     [7, 2, 5, 3, 4],
+                     [4, 3, 6, 4, 1],
+                     [8, 7, 3, 5, 2]];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+                let sum=a+b+c;
+                if(a<b) max= b;
+                else max = a;
+                if(c<max) max = max;
+                if((sum-max)<=max)answer='No';
+                
+                return answer;
+            }
+
+            console.log(solution(10, 33, 17));
+        </script>
+    </body>
+</html>

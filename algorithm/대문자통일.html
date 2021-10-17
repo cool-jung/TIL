@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){         
+                let answer="";
+                for(i of s){
+                    //아스키 코드1
+                    // let num = i.charCodeAt();
+                    // if(num>=97&&num<=122) answer+=String.fromCharCode(num-32);
+                    // else answer+=i;
+                    
+                    //대문자 구분1
+                    if(i===i.toLowerCase()) answer+=i.toUpperCase();//소문자면 answer에 대문자로 변환한 내용을 추가한다.
+                    else answer+=i; //대문자면 그냥 추가
+
+                    //대문자 구분2
+                    // if(i!==i.toUpperCase()) answer+=i.toUpperCase();
+                    // else answer+=i;
+
+                    //아스키 코드2
+                    // for(let i of s){
+                    //     let num = i.charCodeAt();
+                    //     if(num >= 65 && num<= 90)answer+=i;
+                    //     else answer+=i.toUpperCase();
+                    // }
+                }
+
+                return answer;
+
+            }
+
+            let str="ItisTimeToStudy";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>

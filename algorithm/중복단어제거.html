@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer=[];
+                for (let i = 0; i < str.length; i++) {
+                    console.log(str[i], i, str.indexOf(str[i]));
+                    if(s.indexOf(s[i])===i)answer+=str[i]+" ";
+
+                }
+                return answer;
+            }
+            let str=["good", "time", "good", "time", "student"];
+            console.log(solution(str));
+        </script>
+    </body>
+</html>

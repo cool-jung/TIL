@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer;
+                let min = Number.MAX_SAFE_INTEGER;  //안정적인 가장 큰 정수 값으로 초기화 해놓은 다음     
+                for(let i=0; i<=arr.length; i++){
+                    if(arr[i]<=min) min=arr[i]; // arr[i]랑 비교했을때 무조건 min이 더 크기 때문에 참이 됨
+                    
+                }
+                answer = min;
+                return answer;
+            }
+            let arr=[5, 7, 1, 3, 2, 9, 11];
+            console.log(solution(arr));
+
+
+            // 2번째 방법
+            function solution(arr){
+                let answer;
+                let min = arr[0]; //min을 arr 0번째 인덱스로 초기화
+                for(let i=1; i<=arr.length; i++){ //인덱스 1번째랑 비교
+                    if(arr[i]<=min) min=arr[i]; 
+                    
+                }
+                answer = min;
+                return answer;
+            }
+
+            // 3번째 방법
+            // function solution(arr){
+            //     let answer = Math.min(...arr);  //Math.min 내장함수
+            //     console.log(Math.max(...arr)); 
+            //     return answer;
+            // }
+            
+
+        </script>
+    </body>
+</html>
