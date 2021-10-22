@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+    
+    
+</head>
+<body>
+    <script>
+
+      class 포메{
+        constructor(name, gender){
+          this.name = name
+          this.gender = gender
+        }
+      }
+
+      const my포메 = new 포메('강아지','성별')
+      console.log(my포메)
+
+      class 갤럭시 extends 포메{
+        constructor(name, gender){
+          super(name, gender)
+        }
+      }
+
+      const daughter = new 갤럭시('루야','여');
+      console.log(daughter);
+      class 눈꽃송이 extends 포메{
+        constructor(name, gender, mother){
+          super(name, gender)
+          this.mother = mother
+        }
+      }
+
+      
+
+    </script>
+
+
+</body>
+</html>

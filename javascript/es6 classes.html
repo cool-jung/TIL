@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+    
+    
+</head>
+<body>
+    <script>
+
+
+      //es6 classes
+      
+      // function User(first, last){
+      //   this.firstName = first
+      //   this.lastName = last
+      // }
+
+      // User.prototype.getFullName = function (){
+      //   return `${this.firstName} ${this.lastName}`
+      // }
+
+      class User{
+        constructor(first,last){
+          this.firstName = first
+          this.lastName = last
+        }
+        getFullName() {
+          return `${this.firstName} ${this.lastName}`
+        }
+      }
+      const luya = new User('luya','Jung');
+      const latte = new User('latte','Jang');
+      const cookie = new User('cookie','lim');
+      
+      console.log(luya);
+      console.log(latte.getFullName());
+      console.log(cookie.getFullName());
+
+    </script>
+
+
+</body>
+</html>

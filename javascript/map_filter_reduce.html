@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  // TODO var vs const, let
+  // TODO scope
+  // TODO https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216
+  const arr = [1, 2, 3, 4];
+  const person = [
+    { age: 29, name: 'papico' },
+    { age: 49, name: 'er' },
+    { age: 79, name: 'we' },
+    { age: 20, name: 'qw' },
+  ]
+
+
+  // 조건 1. 30살 이하 => filter O
+  // 조건 2. name 배열 => map
+  const result2 = person.filter(function (el) {
+    return el.age < 30
+  }).map(function (el) {
+    return el.name
+  })
+
+  console.log({ result2 });
+
+  // const result = ['papico', 'qw'];
+
+  // map
+  // 배열의 길이가 달라지지 않는다. 있는 원소를 순회하면서 값에 변화주기 때문에
+  // 기존 배열을 조작하지 않는다.
+  // 함수형 기본 순수함수 또는 부수효과를 일으키지 않는다
+  // TODO 함수 표현식 함수 선언문
+  const newArr = arr.map(function(el) {
+    return el + 1;
+  })
+
+  const newArr2 = arr.map((el) => {
+    return el * 2;
+  });
+
+  console.log({ arr, newArr, newArr2 })
+
+  // filter
+  // 배열의 길이가 달라져요. 구성 원소중에 callback 반환값이 참인 경우를 포함
+  // 기존 배열을 조작하지 않는다.
+
+  const result = [6, 7, 8, 9];
+  const filteredArr = arr.filter(function (el) {
+    return el >= 6
+  })
+
+  // map + filter
+
+
+  const evenArr = arr.filter(function (el) {
+    return el % 2 === 0
+  })
+
+  console.log({ filteredArr, evenArr })
+
+
+  // reduce
+  // 원래값에 callback 리턴값을 계속 저장해서 결국 누적된 값을 반환
+  // 반환값 합쳐진 결과
+
+
+
+  const reduceArr = arr.reduce(function(nusan, el) {
+    return nusan + el
+  })
+
+
+
+  const person2 = [
+    { age: 29, name: 'papico' },
+    { age: 49, name: 'er' },
+    { age: 79, name: 'we' },
+    { age: 20, name: 'qw' },
+  ]
+
+  '나이: 29, name: papico나이: 49, name: er'
+
+  const person2 = [
+    { age: 29, name: 'papico' },
+    { age: 49, name: 'er' },
+    { age: 79, name: 'we' },
+    { age: 20, name: 'qw' },
+  ]
+  // 나이의 총합
+  const mission1 = person2.reduce(function(nusan, el) {
+    return nusan + el.age
+  }, 0)
+
+
+  // 이름을 ~~ 연결
+  const mission2 = person2.reduce(function(name, el) {
+    if (name === '') {
+      return el.name
+    }
+    return name + '~~' + el.name
+  }, '')
+
+  //
+
+  const obj = {a: 1, b: 2}
+
+  const { a, b }
+
+  const person2 = [
+    { age: 29, name: 'papico' },
+    { age: 49, name: 'er' },
+    { age: 79, name: 'we' },
+    { age: 20, name: 'qw' },
+  ]
+  // '나이: 29, name: papico나이: 49, name: er....'
+  const mission3 = person2.reduce(function() {
+
+  })
+
+  console.log({ mission1, mission2, mission3 })
+
+
+  console.log('1')
+
+  /**
+   * TODO
+   * https://doozi0316.tistory.com/entry/JavaScript-ECMAScript%EB%9E%80-ES5%EC%99%80-ES6%EC%9D%98-%EC%B0%A8%EC%9D%B4var-const-let-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98-class
+   * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+   * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+   * https://poiemaweb.com/
+   */
+</script>
+
+</body>
+</html>

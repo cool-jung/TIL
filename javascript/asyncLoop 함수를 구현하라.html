@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>loop함수를 구현하라</title>
+    
+    
+</head>
+<body>
+
+    
+
+    <script>
+    //   loop(function(i) {
+    //   console.log(fizzBuzz(i));
+    //   }, 6);
+
+    // 1. asyncLoop는 setTimeout과 setInterval을 가지고 구현
+
+    function fizzBuzz(num){
+        if (num % 15 === 0) return "FizzBuzz";
+        if (num % 3 === 0) return "Fizz";
+        if (num % 5 === 0) return "Buzz";
+        return num;
+    }
+
+    function asyncLoop(cb, count, timeout) {
+    // let i = 1;
+    // while(i <= count) {
+    //     const index = i;
+    //     setTimeout(function() {
+    //         cb(index);
+    //     }, timeout * index);
+    //     i++;
+    // }
+    
+    let i = 0;
+    const intervalId = setInterval(function() {
+        if (i++ < count) {
+            cb(i);
+        } else {
+            clearInterval(intervalId);
+        }
+    }, timeout);
+}
+
+
+
+    asyncLoop(function(i) {
+    console.log(fizzBuzz(i));
+    }, 6, 1000);
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

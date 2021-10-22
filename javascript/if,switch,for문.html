@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2주차 스터디 과제</title>
+    
+    
+</head>
+<body>
+
+    
+
+    <script>
+//0. 국, 영, 수 3개 과목의 점수를 받는다.
+// 평균점수에 따라 수,우,미,양,가를 반환한다.      
+
+function grade(kor,eng,math){
+        const total = kor + eng + math;
+        const average = total / 3;
+        
+        if (average >= 90 ) 
+          return "수";
+        if (average >= 80 )
+          return "우";
+        if (average >= 70 )
+          return "미";
+        if (average >= 60 )
+          return "양";
+        if (average >= 50 )
+          return "가";      
+      }
+
+document.write(grade(90,90,90));      
+
+// 1. 받은 숫자를 역순으로 출력하는 함수
+function reverseCount(num,output){
+    for(let i=num; i>=0; i--){
+       output(i);
+    }
+}
+
+reverseCount(5,function(i){
+  console.log(i);
+});
+// 1번의 출력 : 5,4,3,2,1
+
+// 2. 영어로 된 숫자를 숫자로 변환 하기 (1~10까지만...one two three four ... ten)
+// 예외 처리는 없이 정해진 one ~ ten 이 입력이 정확히 들어온다고 가정하고 구현할것
+convertToNumber('one') // 1
+convertToNumber('two') // 2
+// ... 
+convertToNumber('five') // 5
+// ...
+convertToNumber('ten') // 10
+const toNumber = prompt("","");
+function convertToNumber(num){
+  switch(num){
+    case 'one' : return 1;
+    case 'two' : return 2;
+    case 'three' : return 3;
+    case 'four' : return 4;
+    case 'five' : return 5;
+    case 'six' : return 6;
+    case 'seven' : return 7;
+    case 'eight' : return 8;
+    case 'nine' : return 9;
+    case 'ten' : return 10;
+    default : return "없는 숫자입니다";
+  }
+}
+console.log(convertToNumber(toNumber));
+
+// 3. 입력에 아래와 같이 각각 쏘나타,K5,말리브,sm3,320D,A4, 에러처리, 되었을때 자동차 브랜드명을 출력
+// sm3,320D,c200 의 브랜드는 직접 찾아보세요! 
+// (찾아보라는 이유는 예를들어 전혀 모르는 차브랜드를 알아야 하는 회사에 입사했을때,
+// 차브랜드에 대해서 조금이라도 이해하고 있어야 하기때문, 그리고 검색을 습관화!!)
+const brand = prompt("","");
+function carBrand(brandname){
+  switch(brandname){
+    case '쏘나타' 
+    : return '현대';
+    case 'K5'
+    : return '기아';
+    case '지바겐'
+    : return '벤츠';
+    case 'sm3'
+    : return '삼성';
+    default
+    : return '에러 : 없는 차종입니다.';
+  }
+}
+document.write(carBrand(brand));
+
+// 4. 1~ n까지의 합을 구하는 함수
+
+
+function sum(maxNum){
+  let total = 0;
+  for(let i = 0; i <=maxNum; i++){
+    total += i;
+  }
+  return total;
+}
+console.log(sum(100));
+    </script>
+
+
+</body>
+</html>

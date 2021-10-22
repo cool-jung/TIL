@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2주차 스터디 과제</title>
+    
+    
+</head>
+<body>
+
+    
+
+<script>
+    var a= 1;
+    function outer(){
+        console.log(a);
+
+        function inner(){
+            console.log(a);
+            var a = 3;
+        }
+
+        inner();
+        console.log(a);
+    }
+    outer();
+    console.log(a);
+
+
+</script>
+
+
+</body>
+</html>

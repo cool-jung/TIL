@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+    
+    
+</head>
+<body>
+    <script>
+
+      //즉시 실행 함수
+      (function(){
+        //어쩌고 저쩌고
+      }());
+
+      const timer = setTimeout(() => {
+        console.log('Heropy!')
+      }, 3000);
+
+      const h1El = document.querySelector('h1');
+      h1El.addEventListener('click',() => {
+        clearTimeout(timer)
+      });
+
+
+      const 갤럭시 = {
+        breed: "포메라니안",
+        gender:"남"
+      }
+
+      const 눈꽃송이 = {
+        breed : "포메라니안",
+        gender:"여"
+      }
+
+      const add = Object.assign(갤럭시, 눈꽃송이);
+      console.log(add);
+      console.log(갤럭시);
+      console.log(add === 갤럭시);
+
+      const keys = Object.keys(갤럭시);
+      console.log(keys);
+   
+    </script>
+
+
+</body>
+</html>

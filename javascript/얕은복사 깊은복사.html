@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+    
+    
+</head>
+<body>
+    <script>
+      //얕은 복사(Shallow copy), 깊은 복사(Deep copy)
+
+      const user = {
+        name: 'luya',
+        age :40,
+        emails: ['thesec@gmail.com']
+      }
+      const copyUser = {...user}
+      console.log(copyUser === user)
+
+      user.age = 22
+      console.log('user',user)
+      console.log('copyUser',copyUser)
+
+      user.emails.push('neo@zillinks.com')
+      console.log(user.emails === copyUser.emails)
+      // console.log('user',user)
+      // console.log('copyUser',copyUser)
+
+    </script>
+
+
+</body>
+</html>
