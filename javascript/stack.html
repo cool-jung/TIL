@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> stack </title>
+<script>
+class Stack {
+  constructor() {
+    this._arr = [];
+  }
+  push(item) {
+    this._arr.push(item);
+  }
+  pop() {
+    return this._arr.pop();
+  }
+ 
+}
+
+const stack = new Stack();
+stack.push("강아지");
+stack.push("고양이");
+stack.push("햄스터");
+stack.pop(); // -햄스터
+
+console.log(stack);
+
+</script>
+</head>
+<body>
+</body>
+</html>

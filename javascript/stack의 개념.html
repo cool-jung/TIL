@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> stack </title>
+<script>
+//STACK 
+
+class Stack {
+  constructor () {
+    this.arr = []
+  }
+
+  push (value) {
+    this.arr.push(value)
+  }
+
+  pop () {
+    return this.arr.pop()
+  }
+
+  length () {
+    return this.arr.length
+  }
+
+  peek () {
+    return this.arr[this.arr.length - 1]
+  }
+
+  isEmpty () {
+    return this.arr.length === 0
+  }
+
+  clear () {
+    this.arr = []
+  }
+}
+
+const stack = new Stack()
+
+// 데이터 삽입
+stack.push(1) // arr: [1]
+stack.push(20) // arr: [1, 20]
+stack.push(300) // arr: [1, 20, 300]
+stack.push(4000) // arr: [1, 20, 300, 4000]
+
+// 데이터 추출
+stack.pop() // 4000
+
+// 현재 스택 길이
+stack.length() // 3
+
+// 다음에 추출될 데이터
+stack.peek() // 300
+
+// 스택이 비어있는지 확인
+stack.isEmpty() // false
+
+// 스택 초기화
+stack.clear()
+
+console.log(stack);
+
+</script>
+</head>
+<body>
+</body>
+</html>

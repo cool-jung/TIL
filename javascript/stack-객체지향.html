@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> stack </title>
+<script>
+//STACK 
+
+class Stack {
+  constructor() {
+    this.storage = {}
+    this.size = 0
+  }
+  push(element) {
+    this.size++ 
+    this.storage[this.size] = element 
+  }
+
+  pop() {
+    let removed = this.storage[this.size]
+    delete this.storage[this.size]
+    this.size--
+    return removed
+  }
+
+  peek() {
+    return this.storage[this.size]
+  }
+
+  isEmpty(){
+    return this.storage[this.size] === 0
+  }
+}
+
+const stack = new Stack()
+stack.push('dog')
+stack.push('cat')
+stack.push('bear')
+//Stack { storage : { '1' : 'dog', '2' : 'cat', '3' : 'bear' }, size : 3 }
+
+stack.pop() //'bear'
+stack // Stack { storage : { '1' : 'dog', '2' : 'cat'  }, size : 2 }
+
+stack.peek() //'cat' (peek -stack에 쌓인 제일 마지막 요소를 보여주기만)
+
+
+console.log(stack);
+</script>
+</head>
+<body>
+</body>
+</html>
