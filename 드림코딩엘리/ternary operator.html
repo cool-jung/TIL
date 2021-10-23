@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+
+  <body>
+    <script>
+      {
+
+        const isCat = true;
+       
+        //똥 코드
+        {
+         let component;
+         if(isCat){
+           component = '고앵이';
+         }else{
+           component = '강아지';
+         }
+         console.log(component);
+        }
+
+        // 클린 코드
+        const component = isCat ? '고앵이' : '강아지';
+        console.log(component);
+        console.log(isCat ? '고앵이' : '강아지' );
+      }
+    </script>
+  </body>
+</html>

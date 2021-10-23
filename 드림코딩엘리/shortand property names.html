@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+
+  <body>
+    <script>
+      {
+        const siwon1 = {
+          name: 'siwon',
+          age:'18'
+        };
+
+        const name = 'siwon';
+        const age = '18';
+
+        //똥 코드
+        const siwon2 = {
+          name:name,
+          age:age,
+        };
+
+        //클린 코드
+        const siwon3 = {
+          name,
+          age,
+        };
+
+        console.log(siwon1,siwon2,siwon3);
+
+      }
+    </script>
+  </body>
+</html>

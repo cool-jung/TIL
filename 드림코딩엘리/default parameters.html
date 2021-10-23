@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+
+  <body>
+    <script>
+      {
+       
+        //똥 코드
+        {
+          function printMessage(message){
+            if(message == null) {
+              message = 'default message';
+            }
+            console.log(message);
+          }
+
+          printMessage('hello');
+          printMessage();
+        }
+
+        //클린 코드
+        {
+          function printMessage(message = 'default message'){
+            console.log(message);
+          }
+
+          printMessage('hello');
+          printMessage();
+        }
+
+      }
+    </script>
+  </body>
+</html>

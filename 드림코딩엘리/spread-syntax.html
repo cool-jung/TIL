@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+
+  <body>
+    <script>
+      {
+        const obj1 = {루야 : '뚱땡이'};
+        const obj2 = {마론 : '간장치킨'};
+        const array = [obj1,obj2];
+
+        // array copy
+        const arrayCopy = [...array];
+        console.log(array,arrayCopy);  
+
+        const arrayCopy2 = [...array, {쿠키 : '쿠키맛'}];
+        obj1.루야 = '스팸'; 
+        // ( 위 처럼 )카피해왔어도 원본만 바꿔도 카피해온 키 벨류값이 다 바뀌어서 적용될 수 있음
+        console.log(array,arrayCopy,arrayCopy2);
+
+
+        // object copy
+        const obj3 = {...obj1};
+        console.log(obj3);
+
+        //array concatenation 연결 합칠 수 있는 방법
+        const fruits1 = ['복숭아','딸기'];
+        const fruits2 = ['바나나','키위'];
+        const fruits = [...fruits1,...fruits2];
+        console.log(fruits);
+
+        //object merge
+        const dog1 = {dog1:'루야'};
+        const dog2 = {dog2:'마론'};
+        const dog = {...dog1,...dog2};
+        console.log(dog);
+        //만약 동일한 키를 가지고 있는 오브젝트일 경우 마지막 오브젝트가 덮어씌운다. 
+        //즉 마론이가 루야랑 키 값이 같으면 마론이만 남는다.
+
+      }
+    </script>
+  </body>
+</html>

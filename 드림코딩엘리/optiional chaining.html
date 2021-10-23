@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+
+  <body>
+    <script>
+      {
+        const person1 = {
+        name : 'siwon',
+        job : {
+          title: 'frontEnd engineer',
+          hobby :{
+            name: 'bother at puppy'
+          },
+        },
+      };
+
+      const person2 = {
+        name : 'rihanna',
+      };
+
+
+      //똥 코드
+      {
+        function printHobby(person){
+          console.log(person.job.hobby.name);
+        }
+        printHobby(person1);
+        // printHobby(person2);
+      }
+
+      //똥 코드 2
+      {
+        function printHobby(person){
+                console.log(
+                  person.job
+                  ?person.job.menager
+                    ?person.job.hobby.name
+                    :undefined
+                  :undefined
+                );
+              }
+              printHobby(person1);
+              printHobby(person2);
+      }
+     
+
+      // 똥 코드3
+      {
+        function printHobby(person){
+          console.log(person.job&&person.job.hobby&&person.job.hobby.name);
+        }
+        printHobby(person1);
+        printHobby(person2);
+
+      }
+
+      //클린 코드
+      {
+        function printHobby(person){
+          console.log(person.job?.hobby?.name);
+        }
+        printHobby(person1);
+        printHobby(person2);
+      }
+
+
+      }
+     
+    </script>
+  </body>
+</html>
