@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 별 트리 만들기 </title>
+<script>
+    for(let i = 0; i < 5; i++)  { //줄 수(5개)
+  for(let j=4; j > i; j--)  { //공백 수 점점 줄어들기
+    // space
+    document.write('?'); //띄어쓰기 출력
+  }
+  for(let k=0; k <= i*2; k++)  { //2개씩 별찍기 
+    document.write('*');
+  }
+  document.write('<br>'); //줄 바꿈
+}
+
+
+function solution(n){
+  var star = ''; //초기화
+  for (var i = 0; i < n; i++) { //n줄
+      for (var j = n-1; j > i; j--) { //공백 n-1개부터 하나씩 마이너스
+          star += ' ';
+      }
+      for (var k = 0; k <= (i * 2); k++) { //2개씩 별찍기
+          star += '*';
+      }
+      star += '\n'; //줄바꿈
+  }
+  return star;
+}
+
+console.log(solution(5));
+
+
+
+// for(let i=0; i<5; i++) {
+//   for(let j=0; j<4-i; j++) {
+//     star += ' ';
+//   }
+//   for(let j=0; j<i*2+1; j++) {
+//     star += '*';
+//   }
+//   star += '\n';
+// }
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(participant, completion) {
+                var answer = '';
+                const participantSort = participant.sort(); 
+                const completionSort = completion.sort();
+                //A-Z까지 정렬
+
+                for(let i=0; i<participant.length; i++){
+                    if(participantSort[i]!==completionSort[i]){ //참가선수 명단에 완주선수가 없는 경우
+                        answer= participantSort[i]; //없는 선수 출력
+                        break; //동명이인일 경우 중복오류때문에 오류가 날 수 있으므로 찾자마자 break 또는 바로 return해도 됨
+                    }
+                }
+
+                return answer;
+            }
+            const participant = ["marina", "josipa", "nikola", "vinko", "filipa"];
+            const completion = ["josipa", "filipa", "marina", "nikola"];
+            console.log(solution());
+        </script>
+    </body>
+</html>
