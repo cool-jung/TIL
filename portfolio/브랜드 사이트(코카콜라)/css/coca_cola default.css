@@ -1,0 +1,10 @@
+body,header,footer,section,nav,ul,dl, dt, dd, address, ol,li,p,div,h1,h2,h3,button{
+	margin:0px; padding:0px;
+}
+h1,h2{font-size:100%; font-weight:normal;}
+ul{list-style:none;}
+a{text-decoration:none;}
+address{font-style:normal;}
+img{ display:block;  margin:0px; padding:0px; border:0px none;}
+hr, caption{display:none;}
+table{ border-collapse:collapse; border-spacing:0px; }

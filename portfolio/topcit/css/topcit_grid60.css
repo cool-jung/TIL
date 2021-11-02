@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.container{width:1248px; margin:0px auto; overflow:hidden;  position:relative;}
+/*.container::after{display:block; font-size:0; line-height:0; width:0; height:0; clear:both;}*/
+.container>.row{clear:both;}
+.container [class*=col]{float:left; margin:0px 9px 18px;}
+
+.container .col1{width:86px;	}
+.container .col2{width:190px;	}
+.container .col3{width:294px;	}
+.container .col4{width:398px;	}
+.container .col5{width:502px;	}
+.container .col6{width:606px;	}
+.container .col7{width:710px;	}
+.container .col8{width:814px;	}
+.container .col9{width:918px;	}
+.container .col10{width:1022px;}
+.container .col11{width:1126px;}
+.container .col12{width:1230px;}

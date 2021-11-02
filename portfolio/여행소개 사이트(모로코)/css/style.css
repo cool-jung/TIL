@@ -1,0 +1,878 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+header{
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    margin-top: -75px;
+    z-index: 1000;
+    
+}
+
+header>h1{
+    text-indent: -9999em;
+}
+
+header>nav>.gnb>li>a{
+    
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+header>nav.gnb>li:hover>a,
+header>nav>.gnb>li.on>a{
+    color: #000;
+}
+
+section>article{
+    width: 100%;
+}
+
+section>.cont1{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /* background-image: url(../images/main.jpg);  */
+    
+    
+}
+
+section>.cont1>.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -312px;
+    opacity: 0.7;
+}
+
+section>.cont1>.global{
+    position: absolute;
+    top: 70px;
+    right: 300px;
+}
+
+section>.cont1>.global>a{
+    display: block;
+    width: 100px;
+    height: 29px;
+}
+
+section>.cont1>.global>img{
+    position: absolute;
+    top: 50px;
+}
+
+section>.cont1>.global>a>span{
+    position: absolute;
+    top:-10px;
+    padding: 10px;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+
+section>.cont1>.menu{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    opacity: 0.7;
+}
+
+input[id="menuicon"]{
+    display:none;
+}
+
+input[id="menuicon"]+label{
+    display: block;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    cursor:pointer;
+}
+
+input[id="menuicon"]+label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #fff;
+    transition:all .35s;
+
+}
+
+input[id="menuicon"]+label span:nth-child(1){
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2){
+    top: 50%;
+    transform:translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+
+
+
+section>.cont1>.down_arrow{
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+
+
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    bottom:0px;
+    left:50%;
+    background-image: url(../images/down_arrow.png);
+    opacity: 0.7;
+    text-indent: -9999em;
+    
+}
+
+.slides-next{
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    width: 61px;
+    height: 61px;
+    background-image: url(../images/left_arrow.png);
+    text-indent: -9999em;
+}
+
+.slides-prev{
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    width: 61px;
+    height: 61px;
+    background-image: url(../images/right_arrow.png);
+    text-indent: -9999em;
+
+}
+
+section>.cont2{
+    width: 100%;
+    height: 2480px;
+    
+        
+}
+
+section>.cont2>.about_img{
+    height: 1280px;
+    background-image: url(../images/about1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont2>.about{
+    position: relative; 
+    *zoom:1;
+    width: 100%;
+    height: 1200px;
+    background-color: #4d4d4d;
+}
+
+section>.cont2>.about>.about_cont{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+}
+
+section>.cont2>.about:after{
+    display:block;clear:both;content:'';
+}
+
+section>.cont2>.about>.about_cont>ul{
+    float: left;
+    width: 50%;
+    height: 100%;
+    
+}
+
+section>.cont2>.about>.about_cont>.about_cont1{
+    position: relative;
+    height: 100%;
+    background-color: #4d4d4d;
+
+}
+
+.slides-next_1{
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+    width: 61px;
+    height: 61px;
+    background-image: url(../images/left_arrow.png);
+    text-indent: -9999em;
+
+}
+
+
+
+section>.cont2>.about>.about_cont>.about_cont1 p{
+    text-indent: -9999em;
+}
+
+section>.cont2>.about>.about_cont>.about_cont1>li>p:nth-child(1){
+    position: absolute;
+    top: 20px;
+    width: 246px;
+    height: 1128px;
+    background-image: url(../images/about_text.png);
+}
+
+section>.cont2>.about>.about_cont>.about_cont1>li>p:nth-child(2){
+    position: absolute;
+    top: 90px;
+    left: 400px;
+    width: 684px;
+    height: 383px;
+    background-image: url(../images/about_p1.jpg);
+    
+}
+
+section>.cont2>.about>.about_cont>.about_cont1>li>p:nth-child(3){
+    position: absolute;
+    top: 380px;
+    left: 900px;
+    width: 1000px;
+    height: 625px;
+    background-image: url(../images/about_p2.jpg);
+}
+
+section>.cont2>.about>.about_cont>.about_cont1>li>p:nth-child(4){
+    position: absolute;
+    top:550px;
+    left: 400px;
+    width: 461px;
+    height: 479px;
+    background-image: url(../images/map.png);
+}
+
+section>.cont2>.about>.about_cont>.about_cont2{
+    position: relative;
+    height: 100%;
+    background-color: #4d4d4d;
+
+}
+
+section>.cont2>.about>.about_cont>.about_cont2>li>p:nth-child(1){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 50px;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 800;
+    color: #fff;
+    
+}
+
+section>.cont2>.about>.about_cont>.about_cont2>li>p:nth-child(2){
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 842px;
+    height: 431px;
+    background-image: url(../images/about_p3.jpg);
+    text-indent: -9999em;
+    
+}
+
+section>.cont2>.about>.about_cont>.about_cont2>li>p:nth-child(3){
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+    width: 864px;
+    height: 562px;
+    background-image: url(../images/about_p4.jpg);
+    text-indent: -9999em;
+}
+
+
+section>.cont3{
+    position: relative;
+    width: 100%;
+    height: 2492px;
+    overflow: hidden;
+    
+}
+
+section>.cont3>.blue{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    *zoom:1;
+    
+}
+
+section>.cont3>.blue:after{
+    display:block;clear:both;content:'';
+}
+
+
+
+section>.cont3>.blue>ul{
+    float: left;
+    width: 50%;
+}
+
+section>.cont3>.blue>.mg>li:first-child{
+    
+    height: 1272px;
+    background-image: url(../images/majorelle.jpg);
+    text-indent: -9999em;
+    
+}
+
+section>.cont3>.blue>.mg>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #0d6fd3;
+}
+
+
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 501px;
+    height: 400px;
+    background-image: url(../images/ma1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 893px;
+    height: 594px;
+    background-image: url(../images/ma2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(4)>span:nth-child(1){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 550px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(4)>span:nth-child(2){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 500px;
+    left: 900px;
+    font-size: 80px;
+    font-weight: 800;
+    color: #fff;
+    
+}
+
+section>.cont3>.blue>.mg>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+section>.cont3>.blue>.cc>li:first-child{
+    
+    height: 1272px;
+    background-image: url(../images/c.jpg);
+    text-indent: -9999em;
+    
+}
+
+section>.cont3>.blue>.cc>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #0d6fd3;
+}
+
+
+
+section>.cont3>.blue>.cc>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.cc>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 700px;
+    height: 400px;
+    background-image: url(../images/c1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.cc>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 912px;
+    height: 609px;
+    background-image: url(../images/c2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont3>.blue>.cc>li:last-child>p:nth-child(4){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 550px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+section>.cont3>.blue>.cc>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+
+
+
+
+section>.cont4{
+    position: relative;
+    width: 100%;
+    height: 2427px;
+    overflow: hidden;
+}
+
+
+section>.cont4>.nature{
+    position: absolute;
+    left: 0;
+    top: 0;
+    *zoom:1;
+    width: 200%;
+    height: 100%;
+}
+
+section>.cont4>.nature:after{
+    display:block;clear:both;content:'';
+}
+
+
+
+section>.cont4>.nature>ul{
+    float: left;
+    width: 50%;
+}
+
+section>.cont4>.nature>.mz>li:first-child{
+    height: 1207px;
+    background-image: url(../images/desert.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.mz>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #99a85c;
+
+}
+
+section>.cont4>.nature>.mz>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.mz>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 840px;
+    height: 280px;
+    background-image: url(../images/d1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.mz>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 862px;
+    height: 577px;
+    background-image: url(../images/d2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.mz>li:last-child>p:nth-child(4){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+section>.cont4>.nature>.mz>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+
+section>.cont4>.nature>.lb>li:first-child{
+    height: 1207px;
+    background-image: url(../images/legzira.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.lb>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #99a85c;
+
+}
+
+section>.cont4>.nature>.lb>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.lb>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 760px;
+    height: 374px;
+    background-image: url(../images/legzira1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.lb>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 923px;
+    height: 612px;
+    background-image: url(../images/legzira2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont4>.nature>.lb>li:last-child>p:nth-child(4){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+section>.cont4>.nature>.lb>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+
+section>.cont5{
+    position: relative;
+    width: 100%;
+    height: 2443px;
+    overflow: hidden;
+}
+
+
+section>.cont5>.history{
+    position: absolute;
+    left: 0;
+    top: 0;
+    *zoom:1;
+    width: 200%;
+    height: 100%;
+}
+
+section>.cont5>.history:after{
+    display:block;clear:both;content:'';
+}
+
+
+
+section>.cont5>.history>ul{
+    float: left;
+    width: 50%;
+}
+
+
+
+section>.cont5>.history>.fes>li:first-child{
+    height: 1223px;
+    background-image: url(../images/fes.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.fes>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #b7a17b;
+
+}
+
+section>.cont5>.history>.fes>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.fes>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 575px;
+    height: 376px;
+    background-image: url(../images/fes1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.fes>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 941px;
+    height: 628px;
+    background-image: url(../images/fes2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.fes>li:last-child>p:nth-child(4){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 730px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+section>.cont5>.history>.fes>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+
+section>.cont5>.history>.mk>li:first-child{
+    height: 1223px;
+    background-image: url(../images/marrakesh.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.mk>li:last-child{
+    position: relative;
+    height: 1220px;
+    background-color: #b7a17b;
+
+}
+
+section>.cont5>.history>.mk>li:last-child>p:nth-child(1){
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 864px;
+    height: 1080px;
+    background-color: #fff;
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.mk>li:last-child>p:nth-child(2){
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 610px;
+    height: 458px;
+    background-image: url(../images/marrakesh1.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.mk>li:last-child>p:nth-child(3){
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    width: 1018px;
+    height: 764px;
+    background-image: url(../images/marrakesh2.jpg);
+    text-indent: -9999em;
+}
+
+section>.cont5>.history>.mk>li:last-child>p:nth-child(4){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 400px;
+    left: 730px;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    
+}
+
+
+section>.cont5>.history>.mk>li:last-child>p:nth-child(5){
+    font-family: 'Noto Sans KR',돋움;
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+
+
+footer{
+    height: 100px;
+    /* background-color: #acacac; */
+} 
+
+footer>address{
+    height: 100px;
+    line-height: 100px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

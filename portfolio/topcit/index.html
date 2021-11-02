@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>TOPCIT</title>
+  <script src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            var nav=$('.gnb1>ul');
+        nav.mouseenter(function(){
+                $('.sub').stop().slideDown(350);
+                $('.gnb_bg').stop().slideDown(350);
+            });
+        nav.mouseleave(function(){
+                $('.sub').stop().slideUp(300);
+                $('.gnb_bg').stop().slideUp(300);
+            });
+    
+		/*
+        $(function(){
+			var list=$('.gnb1>ul>li');
+            list.mouseenter(function(){//$(this): 지정 선택자중 이벤트가 발생(인식)된 개체 자신
+              $(this).children('.sub').slideDown(350);  
+            });
+            list.mouseleave(function(){
+               $(this).children('.sub').slideUp(300); 
+            });
+        });
+        */
+        });
+	</script>
+  <link rel="stylesheet" href="css/topcit_grid_style.css">
+ </head>
+ <body>
+	<header id="main_header">
+		<div class="container">
+			<h1><a href="#"><img src="images/logo.png" alt="topcit"></a></h1>
+			<nav class="gnb1">
+				<ul>
+					<li>
+						<a href="#">TIOCIT 이란</a>
+						<div class="sub">
+							<ul>
+								<!-- li*12>a[href=#] -->
+								<li class="subtitle"><a href="#">OverView</a></li>
+								<li><a href="#">사업 소개</a></li>
+								<li><a href="#">주요 연혁</a></li>
+								<li><a href="#">BI 소개</a></li>
+								<li class="subtitle"><a href="#">평가 개요</a></li>
+								<li><a href="#">평가 체계</a></li>
+								<li><a href="#">출제 기준</a></li>
+								<li><a href="#">성적 확인 안내</a></li>
+								<li><a href="#">CBT 시스템 안내</a></li>
+								<li class="subtitle"><a href="#">TOPCIT 활용</a></li>
+								<li><a href="#">기대 효과</a></li>
+								<li><a href="#">MOU 체결 기관</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">평가 접수</a>
+						<div class="sub">
+							<ul>
+								<li><a href="#">접수 가이드</a></li>
+								<li><a href="#">평가 일정 조회/접수</a></li>
+								<li><a href="#">접수 절차</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">학습 센터</a>
+						<div class="sub">
+							<ul>
+								<li><a href="#">온라인 학습센터</a></li>
+								<li><a href="#">TOPCIT 에센스</a></li>
+								<li><a href="#">학습 자료식</a></li>
+								<li><a href="#">TOPCIT샘플문제</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#">고객 지원</a>
+						<div class="sub">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">활용현황</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<nav class="gnb2">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#"><img src="images/tnb_icon1.png" alt="">ENG</a></li>
+					<li><a href="#"><img src="images/toggle_icon.png" alt="sitemap"></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="gnb_bg"></div>
+	</header>
+	<hr>
+	<section id="slide_container">
+		<div class="slides">
+			<div class="slide_content">
+				<img src="images/banner_img1.png" alt="">
+				<a href="#">자세히 보기</a>
+			</div>
+			<div class="slide_content">
+				<img src="images/banner_img6.png" alt="">
+				<a href="#">자세히 보기</a>
+			</div>
+			<div class="slide_content">
+				<img src="images/banner_img9.png" alt="">
+				<a href="#">자세히 보기</a>
+			</div>
+		</div>
+		<div class="pagenate">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+	</section>
+	<hr>
+	<section id="main_content" class="container">
+		<div class="btns row">
+			<ul>
+				<li class="col2"><a href="#">평가 일정 / 접수</a></li> <!--jpadding, bg-img사용-->
+				<li class="col2"><a href="#">접수 결과 조회</a></li>
+				<li class="col2"><a href="#">성적 조회</a></li>
+				<li class="col2"><a href="#">수험표 발급</a></li>
+				<li class="col2"><a href="#">학습 자료실</a></li>
+				<li class="col2"><a href="#">FAQs</a></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="info_wrap row">
+			<h2>소식</h2>
+			<div class="col3 r1">  <!--r1 r2로 구분하는 이유 윗줄과 아랫줄 높이가 달라서 -->
+				<p>2019.05.18<span>제11회 정기평가(국문)</span></p>
+				<a href="#">접수 안내</a>
+			</div>
+			<div class="col9 r1">
+				<a href="#"><img src="images/small_slide.png" alt="topcit 자세히 보기"></a>
+			</div>
+			<div class="col3 r2">
+				<a href="#">
+					<div>
+						<h3>온라인 학습센터</h3><span>2018.10.1</span>
+						<p>TOPCIT 온라인 학습 센터에서 학습에 필요한 강의를 무료로 수강하실 수 있습니다. </p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 r2">
+				<iframe src="https://www.youtube.com/embed/HyMZo_bIr6g?rel=0" width="295" height="250" frameborder="0" allowfullscreen>
+				</iframe>
+			</div>
+			<div class="col3 r2">
+				<a href="#">
+					<div>
+						<h3>TOPCIT 모의 응시</h3><span>2018.10.1</span>
+						<p>‘TOPCIT 모의 응시’ 서비스로 TOPCIT 평가 환경과 문제들을 먼저 만나보세요.</p>
+					</div>
+				</a>
+			</div>	
+			<div class="col3 r2">
+				<a href="#">
+					<div>
+						<h3>TOPCIT 공식 블로그</h3><span>2018.10.1</span>
+						<p>TOPCIT 뿐만 아니라 ICT 관련 정보가 가득한 TOPCIT 공식 블로그에 방문해보세요!</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<hr>
+		<div class="news_wrap row">
+			<div class="news col6">
+				<div class="content_header">
+					<h2>홍보자료</h2><a href="#" title="더보기">+</a>
+				</div>
+				<div class="content_bottom">
+					<table>
+						<caption>최근 홍보자료</caption>
+						<tbody>
+							<tr>
+							<td><a href="#">2019 TOPCIT 소개 영상</a></td>
+							</tr>
+							<tr>
+							<td>
+							<a href="#">[보도] 제11회 TOPCIT 정기평가 전국에서 실시</a><td>
+							</tr>
+							<tr>
+							<td><a href="#">[파이낸셜뉴스] 정보통신기획평가원-우송대, TOPCIT 활용·확산 MOU</a></td>
+							</tr>
+							<tr>
+							<td><a href="#">[파이낸셜뉴스] 정보통신기획평가원-한국재정정보원, 인력 채용때 TOPCIT 활용 MOU</a></td>
+							</tr>
+							<tr>
+							<td><a href="#">[파이낸셜뉴스] 필리핀, 한국 'TOPCIT'으로 SW 역량 평가</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="notice col6">
+				<div class="content_header">
+					<h2>공지사항</h2><a href="#" title="더보기">+</a>
+				</div>
+				<div class="content_bottom">
+					<table>
+						<caption>최근 공지사항</caption>
+						<tbody>
+							<tr>
+							<td><a href="#">2019 제11회 TOPCIT 정기평가 성적공고 안내</a></td>
+							</tr>
+							<tr>
+							<td>
+							<a href="#">TOPCIT 신규 MOU 체결 기관(대진대학교)</a><td>
+							</tr>
+							<tr>
+							<td><a href="#">TOPCIT 신규 MOU 체결 기관(광주SW마이스터고등학교, 우송대학교, 원광대학교)</a></td>
+							</tr>
+							<tr>
+							<td><a href="#">2019 TOPCIT 정기평가 일정 안내</a></td>
+							</tr>
+							<tr>
+							<td><a href="#">2019 제11회 TOPCIT 정기평가 성적 우수자 포상내역 안내</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<footer id="main_footer">
+		<div class="container">
+			<div class="col3">
+				<a href="#" class="footer_logo"><img src="images/logo2.png" alt="topcit"></a>
+				<dl>
+					<dt>자격종류</dt><dd>등록민간자격</dd>
+					<dt>자격명</dt><dd>TOPCIT(소프트웨어역량지수)</dd>
+					<dt>등록번호</dt><dd>제 2014-1404 호</dd>
+				</dl>
+			</div>
+			<div class="col6">
+				<ul class="footer_menu">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인 정보 처리 방침</a></li>
+					<li><a href="#">이메일 무단수집 거부</a></li>
+				</ul>
+				<address>
+				<p>주소 : 서울특별시 종로구 새문안로 5가길 32 (적선동) 생산성빌딩 소프트웨어역량지수사업단 03170 (구 110-751)</p>
+				<p>문의 : 02.398.7649</p>
+				<p>메일 : helpdesk&#64;topcit.or.kr</p>
+				</address>
+			</div>
+			<div class="col3">
+				<p>MOU체결 및 기관 활용문의</p>
+				<p>042.612.8457 / shchae&#64;iitp.kr</p>
+				<p>정보통신기획평가원 채송화 수석연구원</p>
+			</div>
+			<p>Copyright&copy;TOPCIT - Test Of Practical Competency in IT., 2014</p>
+		</div>
+	</footer>
+ </body>
+</html>
